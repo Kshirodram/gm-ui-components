@@ -3,6 +3,13 @@ const execSync = require('child_process').execSync;
 const prettyBytes = require('pretty-bytes');
 const gzipSize = require('gzip-size');
 
+const ignore = [
+  '__tests__',
+  'stories',
+  'config',
+  '/*.js'
+];
+
 const exec = (command, extraEnv) =>
   execSync(command, {
     stdio: 'inherit',
@@ -11,13 +18,13 @@ const exec = (command, extraEnv) =>
 
 console.log('Building CommonJS modules ...');
 
-exec('babel src -d . --ignore __tests__', {
+exec(`babel src -d . --ignore ${...ignore}`, {
   BABEL_ENV: 'cjs'
 });
 
 console.log('\nBuilding ES modules ...');
 
-exec('babel src -d es --ignore __tests__', {
+exec(`babel src -d es --ignore ${...ignore}`, {
   BABEL_ENV: 'es'
 });
 

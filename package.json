@@ -60,10 +60,10 @@
     "rollup-watch": "^4.3.1"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./src/setupTests.js",
+    "setupTestFrameworkScriptFile": "<rootDir>/config/setupTests.js",
     "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
     "moduleNameMapper": {
-      "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/src/emptyModule.js"
+      "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/config/emptyModule.js"
     },
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
