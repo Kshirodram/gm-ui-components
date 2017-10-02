@@ -64,6 +64,10 @@
     "unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
     "moduleNameMapper": {
       "\\.(css|jpg|png|svg|ttf)$": "<rootDir>/src/emptyModule.js"
-    }
+    },
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ]
   }
 }

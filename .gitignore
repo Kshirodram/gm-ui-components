@@ -23,6 +23,6 @@ yarn-error.log*
 
 # NPM Package files
 gm-ui-components.min.js
-index.js
+/index.js
 /es
 /umd
