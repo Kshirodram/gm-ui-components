@@ -1,6 +1,13 @@
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
+const fs = require("fs");
+
+const appDirectory = fs.realpathSync(process.cwd());
+const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
+
+console.log("#######");
+console.log(resolveApp("src"));
 
 module.exports = {
   entry: "./src/components/index.js",
@@ -68,5 +75,8 @@ module.exports = {
         ]
       }
     ]
+  },
+  resolve: {
+    modules: [resolveApp("src")]
   }
 };
