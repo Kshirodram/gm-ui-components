@@ -2,7 +2,7 @@
 
 exports[`NavCardTitle matches snapshot 1`] = `
 .c0 {
-  color: #fff;
+  color: inherit;
   margin: 4px 8px 0px;
   white-space: nowrap;
   max-width: 100%;
@@ -26,8 +26,6 @@ exports[`NavCardTitle matches snapshot 1`] = `
 }
 
 .c0 h1 {
-  font-size: 14px;
-  font-weight: 500;
   padding-left: 4px;
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;

@@ -4,11 +4,15 @@ import { mix, darken } from "polished";
 import {
   OPACITY_15,
   COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C,
- } from "style/styleVariables";
+  COLOR_BACKGROUND_C
+} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
 
-const COLOR_TAB_BACKGROUND_BASE = mix(OPACITY_15, COLOR_BACKGROUND_B, COLOR_BACKGROUND_C);
+const COLOR_TAB_BACKGROUND_BASE = mix(
+  OPACITY_15,
+  COLOR_BACKGROUND_B,
+  COLOR_BACKGROUND_C
+);
 
 const TAB_WIDTH_BASE = "1%";
 
@@ -17,7 +21,8 @@ const NavCardGroup = styled.nav`
   flex-flow: row wrap;
   padding: ${spacingScale(0.25)};
   position: relative;
-  background-color: ${COLOR_BACKGROUND_C};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_C};
+  box-shadow: inset 0 0 0 1px ${props => props.theme.COLOR_KEYLINE};
   /* Since the end-user will wrap NavCard with a link element,
      we need to style those child elements here */
   > * {

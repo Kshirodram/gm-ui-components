@@ -4,6 +4,7 @@ exports[`NavCardVal matches snapshot 1`] = `
 .c0 {
   margin: 0;
   display: inline-block;
+  color: inherit;
 }
 
 <dd
