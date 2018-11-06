@@ -28,10 +28,6 @@ const breadcrumbs = [
   "Grace Hopper Battleship Service"
 ];
 
-const ToolbarButtonGroup = ButtonGroup.extend`
-  padding: ${spacingScale(0)} ${spacingScale(1)};
-`;
-
 const toolbarItems = () => {
   return (
     <div

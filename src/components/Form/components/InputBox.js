@@ -15,16 +15,19 @@ import {
 
 const BORDER_WIDTH = 1;
 
-const ACTIVE_SHADOW = `inset 0 0 0 1px ${COLOR_INTENT_HIGHLIGHT}`;
-const FOCUS_SHADOW = `0 0 0 ${FORM_HIGHLIGHT_SIZE}px ${transparentize(
-  1 - OPACITY_50,
-  COLOR_INTENT_HIGHLIGHT
-)}`;
+const ACTIVE_SHADOW = `inset 0 0 0 1px ${props =>
+  props.theme.COLOR_INTENT_HIGHLIGHT}`;
+const FOCUS_SHADOW = `0 0 0 ${props =>
+  props.theme.FORM_HIGHLIGHT_SIZE}px ${props =>
+  transparentize(
+    1 - props.theme.OPACITY_50,
+    props.theme.COLOR_INTENT_HIGHLIGHT
+  )}`;
 
 const InputBox = styled.input`
   ${formInteractionStyles};
-  border: ${BORDER_WIDTH}px solid ${COLOR_INTENT_HIGHLIGHT};
-  color: ${COLOR_INTENT_HIGHLIGHT};
+  border: ${BORDER_WIDTH}px solid ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+  color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
   font-size: ${spacingScale(2)};
   margin: ${spacingScale(0.25)};
   appearance: none;
@@ -56,11 +59,11 @@ const InputBox = styled.input`
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    background-color: ${COLOR_BACKGROUND_A};
+    background-color: ${props => props.theme.COLOR_BACKGROUND_A};
   }
 
   &:checked {
-    background: ${COLOR_INTENT_HIGHLIGHT};
+    background: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
 
     &:after {
       opacity: 1;
@@ -68,12 +71,12 @@ const InputBox = styled.input`
   }
 
   &:disabled {
-    border-color: ${COLOR_BACKGROUND_C};
-    opacity: ${OPACITY_50};
+    border-color: ${props => props.theme.COLOR_BACKGROUND_C};
+    opacity: ${props => props.theme.OPACITY_50};
     box-shadow: none;
 
     &:checked {
-      background-color: ${COLOR_BACKGROUND_C};
+      background-color: ${props => props.theme.COLOR_BACKGROUND_C};
     }
   }
 `;

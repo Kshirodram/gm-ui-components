@@ -15,7 +15,8 @@ import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer"
 import {
   COLOR_BACKGROUND_A,
   COLOR_BACKGROUND_B,
-  COLOR_BACKGROUND_C
+  COLOR_BACKGROUND_C,
+  genericApp
 } from "./../src/style/styleVariables";
 
 const req = require.context("../src", true, /\.stories\.js$/);
@@ -58,7 +59,7 @@ setDefaults({
   maxPropStringLength: 100
 });
 
-addDecorator(withThemesProvider([keen, keenDark]));
+addDecorator(withThemesProvider([keen, keenDark, genericApp]));
 addDecorator(story => <StoryContainer>{story()}</StoryContainer>);
 
 // Options:

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { FONT_SIZE_BASE } from "style/styleVariables";
 
 const InputLabelText = styled.p`
   margin: 0;
-  font-size: ${FONT_SIZE_BASE};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
+  color: ${props => props.theme.COLOR_CONTENT};
 `;
 
 export default InputLabelText;

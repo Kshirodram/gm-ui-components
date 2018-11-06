@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { COLOR_INTENT_HIGHLIGHT } from "style/styleVariables";
-
 import InputBox from "components/Form/components/InputBox";
 
 const RadioBox = styled(InputBox).attrs({
@@ -19,7 +17,7 @@ const RadioBox = styled(InputBox).attrs({
 
   &:checked {
     &:enabled {
-      background: ${COLOR_INTENT_HIGHLIGHT};
+      background: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
     }
 
     &:after {

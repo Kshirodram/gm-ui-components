@@ -43,10 +43,19 @@ const ButtonWrap = styled.button`
   &:focus,
   &:focus:active {
     outline: none;
-    border: 1px solid ${COLOR_INTENT_HIGHLIGHT};
-    box-shadow: 0 0 0 ${FORM_HIGHLIGHT_SIZE}px
-        ${transparentize(1 - OPACITY_50, COLOR_INTENT_HIGHLIGHT)},
-      inset 0 0 0 1px ${transparentize(1 - OPACITY_15, COLOR_BACKGROUND_A)};
+    border: 1px solid ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
+    box-shadow: 0 0 0 ${props => props.theme.FORM_HIGHLIGHT_SIZE}px
+        ${props =>
+          transparentize(
+            1 - props.theme.OPACITY_50,
+            props.theme.COLOR_INTENT_HIGHLIGHT
+          )},
+      inset 0 0 0 1px
+        ${props =>
+          transparentize(
+            1 - props.theme.OPACITY_15,
+            props.theme.COLOR_BACKGROUND_A
+          )};
     z-index: 10;
     position: relative;
 
