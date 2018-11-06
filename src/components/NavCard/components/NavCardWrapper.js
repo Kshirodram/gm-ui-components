@@ -1,27 +1,15 @@
 import styled, { css } from "styled-components";
-import { mix, darken } from "polished";
 
 import { spacingScale } from "style/styleFunctions";
 
 const backgroundColor = css`
-  background-color: ${props =>
-    mix(
-      props.theme.OPACITY_15,
-      props.theme.COLOR_BACKGROUND_B,
-      props.theme.COLOR_BACKGROUND_C
-    )};
+  background-color: #252525;
+  color: #fff;
 `;
 
 const backgroundColorHover = css`
-  background-color: ${props =>
-    darken(
-      0.06,
-      mix(
-        props.theme.OPACITY_15,
-        props.theme.COLOR_BACKGROUND_B,
-        props.theme.COLOR_BACKGROUND_C
-      )
-    )};
+  background-color: #161616;
+  color: #fff;
 `;
 
 const TAB_WIDTH_BASE = "1%";
@@ -55,6 +43,7 @@ const NavCardWrapper = styled.div`
     border: 2px solid ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
     opacity: 0;
   }
+
   &:focus,
   &:hover {
     ${backgroundColorHover};
