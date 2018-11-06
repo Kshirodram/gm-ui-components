@@ -8,7 +8,7 @@ const HeaderWrapper = styled.div`
   background-color: #000;
   background-image: linear-gradient(
       to right,
-      #000,
+      rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0)
     ),

@@ -2,21 +2,16 @@ import styled, { css } from "styled-components";
 
 import { spacingScale } from "style/styleFunctions";
 
-const APP_TOOLBAR_HEIGHT = spacingScale(4);
-const APP_TOOLBAR_FONT_SIZE = props => props.theme.FONT_SIZE_BASE;
-const APP_TOOLBAR_BACKGROUND_COLOR = "transparent";
-const APP_TOOLBAR_TEXT_COLOR = "#fff";
-
 const backgroundImage = css`
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 `;
 
 const HeaderToolbarWrapper = styled.nav`
   ${backgroundImage};
-  background-color: ${APP_TOOLBAR_BACKGROUND_COLOR};
-  color: ${APP_TOOLBAR_TEXT_COLOR};
-  flex: 0 0 ${APP_TOOLBAR_HEIGHT};
-  font-size: ${APP_TOOLBAR_FONT_SIZE};
+  background-color: transparent;
+  color: #fff;
+  flex: 0 0 ${spacingScale(4)};
+  font-size: ${props => props.theme.FONT_SIZE_BASE};
   padding: 0 ${spacingScale(2)};
   align-items: center;
   display: flex;
