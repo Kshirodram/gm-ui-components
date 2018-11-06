@@ -66,6 +66,7 @@ export const DARK_ON_LIGHT_CONTRAST_ENHANCEMENT_RATIO = 2;
 
 export const keen = {
   name: "Keen",
+  tags: [],
 
   COLOR_BRAND_A: "#0aab2a",
   COLOR_BRAND_B: "#0aab2a",
@@ -132,12 +133,13 @@ export const keen = {
 
 export const keenDark = {
   name: "KeenDark",
+  tags: ["dark"],
 
   COLOR_BRAND_A: "#0aab2a",
   COLOR_BRAND_B: "#0aab2a",
   COLOR_CONTENT: "#FFF",
 
-  COLOR_BACKGROUND_A: "#000000",
+  COLOR_BACKGROUND_A: "#111111",
   COLOR_BACKGROUND_B: "#222222",
   COLOR_BACKGROUND_C: "#FFFFFF",
 

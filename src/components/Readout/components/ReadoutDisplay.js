@@ -16,27 +16,6 @@ const ReadoutDisplay = styled.div`
   overflow: hidden;
   font-family: ${props => props.theme.FONT_STACK_BASE};
 
-  &:before {
-    content: "";
-    opacity: 0.2;
-    background-color: ${props => props.color};
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 3px solid ${props => props.color};
-  }
-
   &:first-child:last-child {
     flex-grow: 0;
   }

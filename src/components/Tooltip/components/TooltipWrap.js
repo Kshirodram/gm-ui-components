@@ -4,6 +4,7 @@ const TooltipWrap = styled.div`
   display: inline-block;
   position: relative;
   font-family: ${props => props.theme.FONT_STACK_BASE};
+  font-weight: ${props => props.theme.FONT_WEIGHT_BASE};
 
   :hover > :last-child {
     ${props =>

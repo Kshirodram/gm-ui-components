@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import {
   COLOR_BACKGROUND_A,
@@ -14,8 +14,8 @@ const CheckboxBox = styled(InputBox).attrs({
   border-radius: ${parseInt(RADIUS_05, 10) / 2 + 1}px;
 
   &:after {
-    width: 25%;
-    height: 50%;
+    width: 3px;
+    height: 6px;
     border-style: solid;
     border-width: 0 2px 2px 0;
     border-color: ${COLOR_BACKGROUND_A};

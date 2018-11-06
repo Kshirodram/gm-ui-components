@@ -1,17 +1,8 @@
 import styled from "styled-components";
 import { transparentize } from "polished";
 
-import {
-  COLOR_INTENT_HIGHLIGHT,
-  OPACITY_50,
-  COLOR_BACKGROUND_A,
-  COLOR_BACKGROUND_C
-} from "style/styleVariables";
 import { spacingScale } from "style/styleFunctions";
-import {
-  FORM_HIGHLIGHT_SIZE,
-  formInteractionStyles
-} from "./InputFieldInteractionStyles";
+import { formInteractionStyles } from "./InputFieldInteractionStyles";
 
 const BORDER_WIDTH = 1;
 
