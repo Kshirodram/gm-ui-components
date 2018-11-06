@@ -34,7 +34,7 @@
     "prepublishOnly": "npm run build",
     "postpublish": "npm run deploy-storybook",
     "start": "webpack -w",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 5678 -s public",
     "test": "node scripts/test.js --env=jsdom",
     "update-deps": "npm-check . --skip-unused -u"
   },
