@@ -5,6 +5,7 @@ const TableWrapper = styled.table`
   height: 100%;
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_SM};
+  color: ${props => props.theme.COLOR_CONTENT};
   white-space: nowrap;
   table-layout: fixed;
   border-collapse: separate;
