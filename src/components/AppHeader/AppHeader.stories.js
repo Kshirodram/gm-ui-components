@@ -28,6 +28,10 @@ const breadcrumbs = [
   "Grace Hopper Battleship Service"
 ];
 
+const ToolbarButtonGroup = ButtonGroup.extend`
+  padding-left: ${spacingScale(1)};
+`;
+
 const toolbarItems = () => {
   return (
     <div
@@ -40,7 +44,7 @@ const toolbarItems = () => {
     >
       <Breadcrumbs crumbs={breadcrumbs} />
       <span>1.1.6</span>
-      <ToolbarButtonGroup style={{ paddingRight: 0 }}>
+      <ToolbarButtonGroup>
         <Button
           outline={false}
           size="xs"
