@@ -208,30 +208,32 @@ const iconBackgroundNames = [
 
 const GalleryIconList = styled.ul`
   margin: 0;
-  font-family: ${FONT_STACK_BASE};
+  font-family: ${props => props.theme.FONT_STACK_BASE};
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 0 1px 1px 0;
 `;
 
 const GalleryIconDemo = styled.li`
-  border: 1px solid ${COLOR_KEYLINE_SOLID};
-  background-color: ${COLOR_BACKGROUND_A};
-  box-shadow: 1px 1px 0 0 ${COLOR_KEYLINE_SOLID};
+  border: 1px solid ${props => props.theme.COLOR_KEYLINE_SOLID};
+  background-color: ${props => props.theme.COLOR_BACKGROUND_A};
+  box-shadow: 1px 1px 0 0 ${props => props.theme.COLOR_KEYLINE_SOLID};
   border-width: 1px 0 0 1px;
   flex: 1 0 20%;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: ${spacingScale(2)};
+  color: ${props => props.theme.COLOR_CONTENT};
 `;
 
 const GalleryIconLabel = styled.p`
   margin: ${spacingScale(1)};
-  font-size: ${FONT_SIZE_SM};
-  opacity: ${OPACITY_70};
+  font-size: ${props => props.theme.FONT_SIZE_SM};
+  opacity: ${props => props.theme.OPACITY_70};
+  color: ${props => props.theme.COLOR_CONTENT};
 `;
 
 const stories = storiesOf("Components|Icons", module);
