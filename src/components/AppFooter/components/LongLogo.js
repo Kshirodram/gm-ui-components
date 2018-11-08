@@ -8,16 +8,12 @@ const LongLogo = styled.a`
   text-align: left;
   transition: all 0.2s ease;
   filter: grayscale(100%);
+  color: inherit;
 
   &:hover {
     opacity: ${props => props.theme.OPACITY_100};
     transition: all 0.2s ease;
     filter: grayscale(0%);
-  }
-
-  img {
-    max-width: 140px; /* Magic number tied to image size */
-    vertical-align: -3px;
   }
 `;
 

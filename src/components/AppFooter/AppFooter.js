@@ -5,10 +5,9 @@ import Copyright from "./components/Copyright";
 import Footer from "./components/Footer";
 import Links from "./components/Links";
 import Link from "./components/Link";
-import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
 import LongLogo from "./components/LongLogo";
-
-import longLogo from "./assets/decipher-logo-long.png";
+import { IconTwitter, IconGitHub, IconLinkedIn } from "components/Glyphs";
+import DecipherLogoLong from "./assets/decipher-logo-long";
 
 AppFooter.propTypes = {
   copyrightText: PropTypes.oneOfType([
@@ -36,7 +35,7 @@ export default function AppFooter({ copyrightText, ...props }) {
         target="_blank"
         title="Decipher Technology Studios website"
       >
-        <img alt="Decipher Technology Studios" src={longLogo} />
+        <DecipherLogoLong />
       </LongLogo>
       <Copyright> {copyrightText} </Copyright>
       <Links>
