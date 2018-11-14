@@ -16,7 +16,7 @@ export const InputField = styled.input.attrs({
   color: ${props => props.theme.COLOR_CONTENT};
   font-family: ${props => props.theme.FONT_STACK_BASE};
   font-size: ${props => props.theme.FONT_SIZE_BASE};
-  background: ${props => props.theme.COLOR_BACKGROUND_A};
+  background: ${props => props.theme.COLOR_BACKGROUND_C};
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 0.15s ease;
@@ -30,7 +30,7 @@ export const InputField = styled.input.attrs({
   }
 
   &:focus {
-    border-color: ${props => props.theme.COLOR_HIGHLIGHT};
+    border-color: ${props => props.theme.COLOR_INTENT_HIGHLIGHT};
     outline: none;
   }
 `;

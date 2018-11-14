@@ -9,11 +9,7 @@ const LayoutSectionWrap = styled.section`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  padding: ${spacingScale(1)};
-
-  &:not(:first-of-type) {
-    margin-top: ${spacingScale(4)};
-  }
+  padding: 0 ${spacingScale(1)};
 `;
 
 export default LayoutSectionWrap;

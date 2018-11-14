@@ -9,6 +9,7 @@ const Header = styled.header`
   padding: 0 ${spacingScale(1)} 0;
   width: 100%;
   flex: 0 0 ${spacingScale(3)};
+  color: ${props => props.theme.COLOR_CONTENT};
 `;
 
 export default Header;
