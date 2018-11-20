@@ -35,10 +35,7 @@ addDecorator(
   ])
 );
 
-const themes = [
-  { name: "decipher", brandColor: COLOR_BRAND_A },
-  { name: "data", brandColor: "#1A66DF" }
-];
+const themes = [keen, keenDark];
 addDecorator(withThemesProvider(themes));
 
 // addon-info
