@@ -13,7 +13,6 @@ import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
 
 import {
-  COLOR_BRAND_A,
   COLOR_BACKGROUND_A,
   COLOR_BACKGROUND_B,
   COLOR_BACKGROUND_C
