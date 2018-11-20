@@ -11,7 +11,6 @@ import backgrounds from "@storybook/addon-backgrounds";
 import { keen, keenDark } from "style/styleVariables";
 import PropTypesTable from "./PropTypesTable";
 import { StoryContainer } from "ComponentLibrary/StoryComponents/StoryContainer";
-import { withThemesProvider } from "storybook-addon-styled-component-theme";
 
 import {
   COLOR_BRAND_A,
